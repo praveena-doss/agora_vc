@@ -10,6 +10,7 @@ import { RESOLUTION_ARR } from "@/utils/Settings";
 // eslint-disable-next-line
 import Polyfill from "@/utils/Polyfill";
 import Validator from "@/utils/Validate";
+import { APP_ID } from "../../utils/Settings";
 
 // Parses the query params from the url
 
@@ -134,6 +135,13 @@ const subscribeMouseEvent = () => {
     Object.entries(postData).map(item => {
       return Cookies.set(item[0], item[1]);
     });
+    var client = AgoraRTC.createClient({mode: 'live', codec: "h264"});
+
+client.init(APP_ID, function () {
+  console.log("AgoraRTC client initialized");
+}, function (err) {
+  console.log("AgoraRTC client init failed", err);
+});
     window.location.href = "precall.html";
   });
   // Press Enter to trigger Join
