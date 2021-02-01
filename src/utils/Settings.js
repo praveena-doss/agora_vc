@@ -10,4 +10,4 @@ export const SHARE_ID = 1;
 export const APP_ID = "7797cc53df1a49368d57dc75c1d69cb8";
 
 // Assign Token to null if you have not enabled app certificate
-export const Token = "0067797cc53df1a49368d57dc75c1d69cb8IADSqd3ARlLyV3nO7i3JAf0a7eInWMO+e6/yNOuxIGWhpDLRTXgAAAAAEABI+NBcLf8YYAEAAQAt/xhg";
+export const Token = "0067797cc53df1a49368d57dc75c1d69cb8IAASkkSuRgo+1fIa9sHeASxmmfGMCuKvQsY9AfqBE6cDaDLRTXgAAAAAEABI+NBchRIZYAEAAQCEEhlg";
